@@ -1,0 +1,46 @@
+.loading-first {
+    margin: 40px 0;
+    width: 88px;
+    height: 88px;
+
+    border: 3px dashed #5A9CFF;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: Loading 5s linear infinite alternate;
+}
+.loading-second {
+    width: 66px;
+    height: 66px;
+
+    border: 3px dashed #247CFF;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: Loading 5s linear infinite alternate;
+}
+.loading-third {
+    width: 42px;
+    height: 42px;
+
+    border: 3px dashed #0066FF;
+    border-radius: 50%;
+
+    animation: Loading 5s linear infinite alternate;
+}
+
+
+@keyframes Loading {
+    0% {
+        transform: rotate(0deg) scale(0.9);
+    }
+    100% {
+        transform: rotate(360deg) scale(1.1);
+    }
+}
