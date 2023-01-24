@@ -45,7 +45,7 @@ const App = () => {
                 :
                 isFirstStart 
                 ?
-                <h1 className='start'>Find a country</h1>
+                <h1 className='start'>Find a city</h1>
                 :
                 isLoading
                 ?
