@@ -1,9 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import MasterProvider from "./Store/MasterProvider";
+import MasterProvider from "./store/MasterProvider";
 
-import App from "./App/App";
+import App from "./app/App";
 
 import "./index.css";
 

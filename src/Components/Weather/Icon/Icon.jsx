@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 
-import WeatherContext from "../../../Store/weather/weatherContext";
+import WeatherContext from "../../../store/weather/weatherContext";
 
 import compareWeatherStatus from "../../../Utils/CompareWeatherStatus";
 

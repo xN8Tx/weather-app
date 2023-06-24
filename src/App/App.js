@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 
-import SearchContext from "../Store/search/searchContext";
-import WeatherContext from "../Store/weather/weatherContext";
+import SearchContext from "../store/search/searchContext";
+import WeatherContext from "../store/weather/weatherContext";
 
-import Weather from "../Components/Weather/index";
-import MyButton from "../UI/MyButton";
-import CitySearch from "../Components/CitySearch/CitySearch";
+import Weather from "../components/Weather/index";
+import MyButton from "../ui/MyButton";
+import CitySearch from "../components/CitySearch/CitySearch";
 
 import "./App.css";
 
@@ -15,9 +15,7 @@ const App = () => {
 
   return (
     <section className="app">
-      <CitySearch
-      // description={isFirstStart ? " ..." : data.weather[0].description}
-      />
+      <CitySearch />
       <Weather />
       <MyButton onClick={getData}>Look at {searchValue}</MyButton>
     </section>

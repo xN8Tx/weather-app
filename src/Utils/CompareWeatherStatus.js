@@ -1,7 +1,7 @@
-import Clear from "../Assets/SVG/Clear";
-import Rain from "../Assets/SVG/Rain";
-import Snow from "../Assets/SVG/Snow";
-import Default from "../Assets/SVG/Default";
+import Clear from "../assets/SVG/Clear";
+import Rain from "../assets/SVG/Rain";
+import Snow from "../assets/SVG/Snow";
+import Default from "../assets/SVG/Default";
 
 const compareWeatherStatus = (main) => {
   switch (main) {

@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
 
-import WeatherContext from "../../../Store/weather/weatherContext";
+import WeatherContext from "../../../store/weather/weatherContext";
 import InfoItem from "../InfoItem/InfoItem";
 
-import rainy from "../../../Assets/Images/Rainy.png";
-import water from "../../../Assets/Images/water.png";
-import windy from "../../../Assets/Images/windy.png";
+import rainy from "../../../assets/Images/Rainy.png";
+import water from "../../../assets/Images/water.png";
+import windy from "../../../assets/Images/windy.png";
 
 export default function Info() {
   const { wind, main } = useContext(WeatherContext).data;

@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 
-import MyInput from "../../UI/MyInput";
-import SearchContext from "../../Store/search/searchContext";
+import MyInput from "../../ui/MyInput";
+import SearchContext from "../../store/search/searchContext";
 
 import "./CitySearch.css";
-import WeatherContext from "../../Store/weather/weatherContext";
+import WeatherContext from "../../store/weather/weatherContext";
 
 const CitySearch = () => {
   const { searchValue, setSearchValue } = useContext(SearchContext);

@@ -1,13 +1,11 @@
 import React, { useContext } from "react";
 
-import WeatherContext from "../../Store/weather/weatherContext";
+import WeatherContext from "../../store/weather/weatherContext";
 
 import Error from "../Error/Error";
 import Loading from "../Loading/Loading";
 import FirstStart from "./FirstStart/FirstStart";
 import Wrapper from "./Wrapper/Wrapper";
-
-import "./index.css";
 
 const Weather = () => {
   const { loading } = useContext(WeatherContext);
