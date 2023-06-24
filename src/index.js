@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 
 import MasterProvider from "./Store/MasterProvider";
 
-import App from "./app/App";
+import App from "./App/App";
 
 import "./index.css";
 

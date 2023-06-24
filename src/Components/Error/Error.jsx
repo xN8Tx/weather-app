@@ -1,6 +1,6 @@
 import React from "react";
 
-import MyHeading from "../../ui/MyHeading";
+import MyHeading from "../../UI/MyHeading";
 
 export default function Error() {
   return (

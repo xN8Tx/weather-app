@@ -27,3 +27,33 @@
   font-size: 24px;
   color: #000000;
 }
+
+.MyButton {
+  margin-top: 40px;
+  padding: 6px 17px;
+  background: #879aff;
+  border-radius: 15px;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+
+  transition: all ease-in 0.4s;
+}
+
+.MyButton:hover {
+  background: white;
+  border: 1px solid #879aff;
+  color: #879aff;
+  transform: scale(1.05);
+}
+
+@media (max-width: 428px) {
+  .MyButton {
+    font-size: 14px;
+  }
+}

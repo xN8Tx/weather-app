@@ -7,6 +7,15 @@
   margin-top: 10px;
 }
 
+.info__item > p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #707070;
+}
+
 .info__item > p > span {
   padding-left: 2px;
   color: #707070;
