@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 
-import SearchContext from "../store/search/searchContext";
-import WeatherContext from "../store/weather/weatherContext";
+import SearchContext from "../Store/search/searchContext";
+import WeatherContext from "../Store/weather/weatherContext";
 
 import Weather from "../components/Weather/index";
 import MyButton from "../ui/MyButton";

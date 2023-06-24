@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import MasterProvider from "./store/MasterProvider";
+import MasterProvider from "./Store/MasterProvider";
 
 import App from "./app/App";
 
