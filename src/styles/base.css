@@ -1,0 +1,96 @@
+.sun {
+  animation: sun 10s linear infinite;
+}
+
+.snow > .first {
+  opacity: 0;
+  animation: snow 2s linear infinite;
+}
+
+.snow > .second {
+  opacity: 0;
+  animation: snow 2s linear infinite;
+  animation-delay: 3s;
+}
+
+.rain > .first {
+  animation: rain 1s linear infinite;
+  animation-delay: 0s;
+}
+
+.rain > .second {
+  animation: rain 1s linear infinite;
+  animation-delay: 1.5s;
+}
+
+.rain > .third {
+  animation: rain 1s linear infinite;
+  animation-delay: 1.5s;
+}
+
+.moon {
+  animation: moon 2s linear infinite alternate;
+}
+
+.cloud > .big {
+  animation: cloud 2s linear infinite alternate;
+}
+
+.cloud {
+  overflow: visible;
+}
+
+.cloud > .small {
+  animation: cloud 2s linear infinite alternate-reverse;
+}
+
+@keyframes sun {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes snow {
+  0% {
+    transform: translateY(-5px) translateX(0);
+  }
+  50% {
+    transform: translateY(-5px) translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(10px) translateX(-3px);
+  }
+}
+
+@keyframes rain {
+  0% {
+    opacity: 1;
+    transform: translateY(-5px) translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(10px) translateX(-3px);
+  }
+}
+
+@keyframes moon {
+  0% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes cloud {
+  0% {
+    transform: translateX(-3px);
+  }
+  100% {
+    transform: translateX(3px);
+  }
+}

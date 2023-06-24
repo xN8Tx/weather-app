@@ -1,0 +1,18 @@
+.temperature {
+  text-align: center;
+}
+.temperature > h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  color: #000000;
+}
+.temperature > p {
+  margin-top: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #707070;
+}

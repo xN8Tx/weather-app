@@ -1,11 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './Components/App/App';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import MasterProvider from "./Store/MasterProvider";
+
+import App from "./App/App";
+
+import "./index.css";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <MasterProvider>
     <App />
-  </React.StrictMode>
+  </MasterProvider>
 );

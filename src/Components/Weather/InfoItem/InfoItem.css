@@ -1,0 +1,13 @@
+.info__item {
+  display: flex;
+  align-items: center;
+}
+
+.info__item:not(:first-child) {
+  margin-top: 10px;
+}
+
+.info__item > p > span {
+  padding-left: 2px;
+  color: #707070;
+}

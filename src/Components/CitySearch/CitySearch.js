@@ -1,31 +1,28 @@
-import React, {useState, useEffect} from 'react';
-import './CitySearch.css'
+import React, { useContext } from "react";
 
-const CitySearch = ({value, setValue, description}) => {
-    const [inputWidth, setInputWidth] = useState(40);
+import MyInput from "../../UI/MyInput";
+import SearchContext from "../../Store/search/searchContext";
 
-    useEffect(() => {
-        if (value <= 3) setInputWidth(40)
-    }, [value]);
+import "./CitySearch.css";
+import WeatherContext from "../../Store/weather/weatherContext";
 
-    return (
-        <div className='city-search'>
-            <p className='text'>Right now, </p>
-            <input type="text"
-                className='input'
-                value={value}
-                style={{width: `${inputWidth}px`}}
-                onChange={(e) => {
-                    setValue(e.target.value)
-                    if(value.length >= 3) {
-                        setInputWidth((value.length + 1) * 11.7)
-                    } 
-                }}
-                placeholder='City'
-            />
-            <p className='text'>, there's {description}</p>
-        </div>
-    );
+const CitySearch = () => {
+  const { searchValue, setSearchValue } = useContext(SearchContext);
+  const { weather } = useContext(WeatherContext).data;
+
+  const description = weather ? weather[0].description : "...";
+
+  const onChange = (event) => {
+    setSearchValue(event.target.value);
+  };
+
+  return (
+    <div className="city-search">
+      <p className="text">Right now, </p>
+      <MyInput value={searchValue} onChange={onChange} placeholder="city" />
+      <p className="text">, there's {description}.</p>
+    </div>
+  );
 };
 
 export default CitySearch;

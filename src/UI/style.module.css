@@ -1,0 +1,29 @@
+.MyInput {
+  text-align: center;
+  border-radius: 0px;
+  border-bottom: 1px solid #707070;
+  margin: 0 7px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 428px) {
+  .MyInput {
+    font-size: 14px;
+  }
+}
+
+.MyHeading {
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+}
