@@ -2,7 +2,7 @@
 
 Simple and beautiful Weather app
 
-Site - http://www.shteyn-tech.online/
+Site - https://shteyn-weather.netlify.app/
 
 ---
 
